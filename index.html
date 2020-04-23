@@ -8,10 +8,12 @@
     <body>
         <script>
             var age = prompt('quel age avez vous?', 'votre age');
-            if (parseInt(age) >= 18) {
+            if ((age >= 18) && (age < 130)) {
             alert('vous êtes majeur');
-        } else {
+        }else if ((age < 18) && (age >= 0)) {      
             alert('vous êtes mineur');
+        }else {
+            alert('Vous avez fait une erreur, saisi non valide.');
         }
         </script>
     </body>
